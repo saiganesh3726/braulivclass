@@ -108,3 +108,8 @@ AgoraRTC.createScreenVideoTrack({
 }).then(localScreenTrack => {
   /** ... **/
 })
+AgoraRTC.createScreenVideoTrack({
+  encoderConfig: "1080p_1",
+}, "enable").then(([screenVideoTrack, screenAudioTrack])=> {
+  /** ... **/
+});
