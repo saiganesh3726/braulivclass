@@ -103,13 +103,4 @@ document.getElementById('mic-btn').addEventListener('click', toggleMic)
 document.getElementById('camera-btn').addEventListener('click', toggleCamera)
 
 
-AgoraRTC.createScreenVideoTrack({
-  extensionId: 'minllpmhdgpndnkomcoccfekfegnlikg',
-}).then(localScreenTrack => {
-  /** ... **/
-})
-AgoraRTC.createScreenVideoTrack({
-  encoderConfig: "1080p_1",
-}, "enable").then(([screenVideoTrack, screenAudioTrack])=> {
-  /** ... **/
-});
+
